@@ -1,0 +1,96 @@
+<html>
+
+<head>
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- main css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+
+    <section class="dark-box py-5 position-relative">
+        <div class="dark-box2 container ">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="myBox-header p-3  d-flex justify-content-between align-items-center text-white ">
+                        <h4 class="fw-bold">Manage Emploees</h4>
+                        <div class="myBox-header-btns">
+                            <button type="submit" id="add"> Add New Emploee</button>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <input type="search" name="" placeholder=" Search by Name..." id="search-box" class="w-100">
+                    </div>
+                    <table class="table mx-auto table-striped table-hover">
+                        <thead class="text-white">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
+                        </thead>
+                        <tbody id="myRow">
+                            
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="dark-box3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center  d-none">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4 m-auto text-white bg-white add-box">
+                        <div class="add-box-header text-gray m-3 d-flex justify-content-between align-items-center">
+                            <h4>Add Emploee</h4>
+                            <p><button class="border border-0 text-gray fa-2x bg-white fw-bold">x</button></p>
+                        </div>
+                        <div class="add-box-body text-gray m-3">
+                            <label for="name">Name</label>
+                            <input type="text" name="" id="emploee-name">
+                            <br>
+                            <br>
+                            
+                            <label for="name">Email</label>
+                            <input type="email" name="" id="emploee-email">
+                            <br>
+                            <br>
+                            
+                            <label for="address" >Address</label>
+                            <textarea name="" id="emploee-address" ></textarea>
+                            <br>
+                            <br>
+                           
+                            <label for="name">Phone</label>
+                            <input type="text" name="" id="emploee-phone">
+                           
+
+                        </div>
+                        <div class="add-box-footer m-3 float-end">
+                            <button class="btn btn-outline-dark px-3" id="cancel">Cancel</button>
+                            <button class="btn btn-success px-5 fw-bold " id="add-real">Add</button>
+
+                            <button class="btn btn-success px-5 fw-bold d-none" id="update-real">Update</button>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
